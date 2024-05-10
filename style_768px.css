@@ -1,0 +1,62 @@
+:root {
+  --bg-color: rgb(33, 40, 45);
+  --text-link: rgb(156, 156, 156);
+}
+
+ul,
+form {
+  display:none
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  position:absolute;
+  background-color: var(--bg-color);
+  right: 15px;
+  margin: 10px;
+  gap: 12px;
+  border: 0
+}
+
+.hamburger-line {
+  display: block;
+  background-color: var(--text-link);
+  height: 5px;
+  width: 60px;
+  border-radius: 5px;
+}
+
+.hamburger:hover {
+  margin: 1px 6px; /* sistemo il margine in modo che all'aumentare della misura dell'hamburger questo rimanga sul posto */
+}
+
+.hamburger:hover div {
+  height: 7px;
+  width: 72px;
+  background-color: green;
+}
+
+/* regole per hamburger icon con immagine */
+
+.hamburger-menu img {
+  height: 45px;
+  margin: 10px;
+  filter: grayscale(100%);
+}
+
+.hamburger-menu{
+  display: block;
+  position: absolute;
+  right: 15px;
+  border:0;
+  background-color: var(--bg-color);
+}
+
+.hamburger-menu:hover img {
+  height: 50px;
+  margin: 7.5px;
+  filter: grayscale(0%) hue-rotate(90deg);
+}
+
