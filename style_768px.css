@@ -28,16 +28,6 @@ form {
   border-radius: 5px;
 }
 
-.hamburger:hover {
-  margin: 1px 6px; /* sistemo il margine in modo che all'aumentare della misura dell'hamburger questo rimanga sul posto */
-}
-
-.hamburger:hover div {
-  height: 7px;
-  width: 72px;
-  background-color: green;
-}
-
 /* regole per hamburger icon con immagine */
 
 .hamburger-menu img {
@@ -53,10 +43,3 @@ form {
   border:0;
   background-color: var(--bg-color);
 }
-
-.hamburger-menu:hover img {
-  height: 50px;
-  margin: 7.5px;
-  filter: grayscale(0%) hue-rotate(90deg);
-}
-
